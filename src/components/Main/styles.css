@@ -1,0 +1,15 @@
+.main__container {
+  padding: 15px 16px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+  .main__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

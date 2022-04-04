@@ -1,0 +1,71 @@
+.cart {
+  width: 100%;
+  max-width: 382px;
+  min-width: 350px;
+  height: 500px;
+  background: #f5f5f5;
+  position: relative;
+  margin: 0 auto;
+}
+
+.cart__header {
+  border-radius: 5px 5px 0px 0px;
+  background: #27ae60;
+  height: 65px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 21px;
+  box-sizing: border-box;
+}
+
+.cart__body {
+  height: 250px;
+  padding: 18.45px;
+}
+
+.cart__footer {
+  padding: 18.45px;
+  box-sizing: border-box;
+}
+
+.cart__footer--price {
+  border-top: 1px solid #828282;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cart__footer--price p:last-child {
+  color: #828282;
+}
+
+.cart__footer button {
+  width: 100%;
+  max-width: 343px;
+  height: 60px;
+  left: 18.45px;
+  top: 390px;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #828282;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}

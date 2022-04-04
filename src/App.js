@@ -1,5 +1,7 @@
-import "./App.css";
 import { useEffect, useState } from "react";
+
+import "./App.css";
+import Main from "./components/Main";
 import Header from "./components/Header";
 import ProductList from "./components/ProductList";
 
@@ -19,7 +21,7 @@ function App() {
   return (
     <>
       <Header />
-      <ProductList {...{ products }} />
+      <Main products={products} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import "./styles.css";
 
 const Product = ({ product: { category, name, price, img, id } }) => {
+  console.log(img);
   return (
     <li className="product">
       <div
