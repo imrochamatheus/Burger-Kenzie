@@ -33,6 +33,7 @@
 .cart__body {
   height: 250px;
   padding: 18.45px;
+  overflow-y: scroll;
 }
 
 .cart__footer {

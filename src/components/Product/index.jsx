@@ -1,7 +1,14 @@
 import "./styles.css";
+import { convertToBRL } from "../../assets/functions";
 
-const Product = ({ product: { category, name, price, img, id } }) => {
-  console.log(img);
+const Product = ({
+  product: { category, name, price, img, id },
+  currentSale,
+  setCurrentSale,
+}) => {
+  const addToCart = () => {
+    setCurrentSale([...currentSale, { category, name, price, img, id }]);
+  };
   return (
     <li className="product">
       <div
@@ -11,8 +18,10 @@ const Product = ({ product: { category, name, price, img, id } }) => {
       <div className="product__body">
         <h3 className="product__body--name">{name}</h3>
         <p className="product__body--category">{category}</p>
-        <p className="product__body--price">{price}</p>
-        <button className="product__body--btn">Adicionar</button>
+        <p className="product__body--price">{convertToBRL(price)}</p>
+        <button className="product__body--btn" value={id} onClick={addToCart}>
+          Adicionar
+        </button>
       </div>
     </li>
   );
