@@ -7,7 +7,7 @@ import ProductList from "./components/ProductList";
 
 function App() {
   const [products, setProducts] = useState(null);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState(null);
 
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
@@ -18,8 +18,8 @@ function App() {
 
   return (
     <>
-      <Header />
-      {products && <Main products={products} />}
+      <Header {...{ products, filteredProducts, setFilteredProducts }} />
+      {products && <Main products={filteredProducts || products} />}
     </>
   );
 }

@@ -6,6 +6,7 @@
   grid-template-columns: 0.5fr 1fr 0.5fr;
   align-items: flex-start;
   box-sizing: border-box;
+  gap: 10px;
 }
 
 .product-cart__image {
@@ -15,7 +16,7 @@
 }
 
 .product-cart__image img {
-  width: 100%;
+  width: 70px;
 }
 
 .product-cart__infos h3,

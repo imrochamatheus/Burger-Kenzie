@@ -7,7 +7,13 @@ const Product = ({
   setCurrentSale,
 }) => {
   const addToCart = () => {
-    setCurrentSale([...currentSale, { category, name, price, img, id }]);
+    const isTheProductInTheCart = currentSale.findIndex(
+      (forSaleProduct) => forSaleProduct.id === id
+    );
+
+    if (isTheProductInTheCart === -1) {
+      setCurrentSale([...currentSale, { category, name, price, img, id }]);
+    }
   };
   return (
     <li className="product">

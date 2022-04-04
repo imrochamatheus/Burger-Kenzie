@@ -2,7 +2,7 @@
   padding: 15px 16px;
   display: grid;
   gap: 20px;
-  grid-template-columns: auto auto;
+  grid-template-columns: 3fr 0.5fr;
   justify-content: center;
 }
 
